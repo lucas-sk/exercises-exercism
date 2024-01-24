@@ -1,0 +1,21 @@
+{
+  "name": "exercism",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "test": "vitest src/index.spec.ts -w",
+    "test:all": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "vitest": "^1.2.1"
+  }
+}
