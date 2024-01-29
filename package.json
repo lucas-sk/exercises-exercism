@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
+    "format": "biome format --write ./",
     "test": "vitest src/index.spec.ts -w",
     "test:all": "vitest"
   },
@@ -16,6 +17,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.5.3",
     "vitest": "^1.2.1"
   }
 }
