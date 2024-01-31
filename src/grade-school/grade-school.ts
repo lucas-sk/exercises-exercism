@@ -7,8 +7,8 @@ export class GradeSchool {
 	}
 
 	roster() {
-		let roster: TRoster = {};
-		for (let i in this._roster) {
+		const roster: TRoster = {};
+		for (const i in this._roster) {
 			roster[i] = [...this._roster[i]];
 		}
 		return roster;
@@ -16,7 +16,7 @@ export class GradeSchool {
 
 	add(nameStudent: string, numberGrade: number) {
 		const isExistGrade = this._roster[numberGrade];
-		for (let i in this._roster) {
+		for (const i in this._roster) {
 			const grade = this.grade(Number(i));
 			const isExistSameStudentThatGrade = grade.some(
 				(item) => item === nameStudent,
