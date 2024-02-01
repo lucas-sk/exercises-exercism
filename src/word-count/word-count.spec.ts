@@ -1,4 +1,4 @@
-import { count } from '..'
+import { count } from './word-count'
 describe('count()', () => {
   it('counts one word', () => {
     const expectedCounts = new Map(Object.entries({ word: 1 }))
